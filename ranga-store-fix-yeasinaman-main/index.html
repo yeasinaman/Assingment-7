@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeamin Store!</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- google Montserrat  font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1 class="h1 fs-2 text-center">Welcome To <span class="text-primary text-opacity-75">Yeamin's Store!</span></h1>
+  </header>
+  <main class="main">
+    <div class="search-field d-flex">
+      <div class="search-box">
+        <input id="input-field" class="search-field" style="border: 1px solid rgb(3, 118, 211);" type="text" />
+        <a href="err.html" type="button" target="_blank" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
+          autocomplete="off" id="search-btn" onclick="loadProducts()">
+          Search
+      </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 col-lg-9 col-sm-7">
+        <div id="all-products" class="">
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+        <div class="cart" id="my-cart">
+          <table class="table">
+            <thead>
+              <h1><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>My-Cart</h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Total Added-Products:</th>
+                <td><span style="color: white;">/</span> <span id="total-Products">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$ <span id="price">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Delivery-Charge:</th>
+                <td>$ <span id="delivery-charge">20</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Total-Tax:</th>
+                <td>$ <span id="total-tax">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2">$ <span id="total">0</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="parces text-center">
+            <a target="_blank" href="err.html" class="btn btn-primary text-center">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <footer></footer>
+
+  <!-- add javascript  file  -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
